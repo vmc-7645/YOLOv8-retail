@@ -10,11 +10,12 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Path to directory where the labeled images were downloaded
-sku_dataset_folder  = '/Users/USER/Downloads/'
+dataset_folder  = '/Users/USER/Downloads/'
 
-sku_dataset_dirname = 'SKU110K_fixed'
-path_images         = Path(sku_dataset_folder) / sku_dataset_dirname / 'images'
-path_annotations    = Path(sku_dataset_folder) / sku_dataset_dirname / 'annotations'
+# Github with fixed annotations https://github.com/eg4000/SKU110K_CVPR19
+dataset_dirname = 'SKU110K_fixed' # From here https://drive.google.com/file/d/1iq93lCdhaPUN0fWbLieMtzfB1850pKwd
+path_images         = Path(dataset_folder) / dataset_dirname / 'images'
+path_annotations    = Path(dataset_folder) / dataset_dirname / 'annotations'
 
 prefix_to_channel = {
     "train": "train",
@@ -31,9 +32,7 @@ for channel_name in prefix_to_channel.values():
 for path_img in path_images.iterdir():
     for prefix in prefix_to_channel:
         if path_img.name.startswith(prefix):
-            path_img.replace(
-                path_images.parent / prefix_to_channel[prefix] / path_img.name
-            )
+            path_img.replace(path_images.parent / prefix_to_channel[prefix] / path_img.name)
 
 # Revised list (54 images) courtesy of ankandrew on GitHub:
 # https://github.com/eg4000/SKU110K_CVPR19/issues/99#issuecomment-988886374
@@ -241,6 +240,8 @@ for prefix in prefix_to_channel:
                     msg = f'{prefix}WARNING: {im_file}: corrupt JPEG restored and saved' 
                     print(msg)
 
+
+# Visualize some results
 counter = 1
 plt.figure(figsize=(20, 20), facecolor='white')
 

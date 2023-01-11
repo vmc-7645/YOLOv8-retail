@@ -2,7 +2,7 @@
  Detect retail products via the YOLOv8 object recognition engine
 # Utilization
 
-Run `pip install -r requirements.txt` to install python dependencies
+Run `pip install -r requirements.txt` to install python dependencies.
 
 
 

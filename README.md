@@ -1,5 +1,5 @@
 # YOLOv8-retail
- Detect retail products utilizing the YOLOv8 engine
+ Detect retail products via the YOLOv8 object recognition engine
 # Utilization
 
 Run `pip install -r requirements.txt` to install python dependencies
@@ -10,4 +10,4 @@ Run `pip install -r requirements.txt` to install python dependencies
 
 Heavily inspired by this [article](https://medium.com/analytics-vidhya/retail-store-item-detection-using-yolov5-7ba3ddd71b0c), but applied to YOLOv8 instead of YOLOv5.
 
-Training data is taken from the SKU110k dataset ([download](http://trax-geometry.s3.amazonaws.com/cvpr_challenge/SKU110K_fixed.tar.gz)), which holds several gigabytes of prelabeled images of the subject matter.
+Training data is taken from the SKU110k dataset ([download from kaggle](https://www.kaggle.com/datasets/thedatasith/sku110k-annotations), which holds several gigabytes of prelabeled images of the subject matter.

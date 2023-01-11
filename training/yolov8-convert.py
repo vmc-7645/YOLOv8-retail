@@ -112,9 +112,7 @@ for channel_name in prefix_to_channel.values():
 # Number of validation images = 584
 # Number of test images = 2919
 for channel_name in prefix_to_channel.values():
-    print(
-        f"Number of {channel_name} images = {sum(1 for x in (path_images.parent / channel_name).glob('*.jpg'))}"
-    )
+    print(f"Number of {channel_name} images = {sum(1 for x in (path_images.parent / channel_name).glob('*.jpg'))}")
 
 os.rmdir(path_images)
 

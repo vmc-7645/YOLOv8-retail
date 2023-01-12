@@ -1,0 +1,11 @@
+path:  "/Users/vinmc/Downloads/SKU110K_fixed/images"
+train: "/Users/vinmc/Downloads/SKU110K_fixed/images/train"
+test: "/Users/vinmc/Downloads/SKU110K_fixed/images/test"
+val: "/Users/vinmc/Downloads/SKU110K_fixed/images/valid"
+
+#Classes
+nc: 1
+
+#classes names
+#replace all class names list with our classes names
+names: ['retail']

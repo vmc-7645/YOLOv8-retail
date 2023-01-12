@@ -4,7 +4,7 @@
 
 Run `pip install -r requirements.txt` to install python dependencies.
 
-
+Correct version of pytorch (Win10/11) `pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116`
 
 # Training
 

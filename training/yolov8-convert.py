@@ -1,5 +1,7 @@
 # Adapted from convert_yolov5.ipynb found here https://www.kaggle.com/datasets/thedatasith/sku110k-annotations?select=convert_yolov5.ipynb
 
+# C:\Users\vinmc\Downloads\SKU110K_fixed>
+
 import cv2
 import glob
 import os
@@ -10,7 +12,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Path to directory where the labeled images were downloaded
-dataset_folder  = '/Users/USER/Downloads/'
+dataset_folder  = '/Users/vinmc/Downloads/'
 
 # Github with fixed annotations https://github.com/eg4000/SKU110K_CVPR19
 dataset_dirname = 'SKU110K_fixed' # From here https://drive.google.com/file/d/1iq93lCdhaPUN0fWbLieMtzfB1850pKwd
@@ -24,6 +26,8 @@ prefix_to_channel = {
 }
 
 assert path_images.exists(), f"{path_images} not found"
+
+print("Path exists, getting file names...")
 
 for channel_name in prefix_to_channel.values():
     if not (path_images.parent / channel_name).exists():
@@ -99,6 +103,8 @@ CORRUPTED_IMAGES = {
     ),             
 }
 
+print("Fixing corrupted images...")
+
 for channel_name in prefix_to_channel.values():
     for img_name in CORRUPTED_IMAGES[channel_name]:
         try:
@@ -120,9 +126,15 @@ yolov5_dataset_folder = os.getcwd()
 yolov5_sku_dataset_dirname = 'SKU110K_fixed'
 local_path_annotations = Path(yolov5_dataset_folder) / yolov5_sku_dataset_dirname / 'labels'
 local_path_images = Path(yolov5_dataset_folder) / yolov5_sku_dataset_dirname / 'images'
+# local_path_annotations = path_annotations
+# local_path_images = path_images
+
+
 
 names = 'image', 'x1', 'y1', 'x2', 'y2', 'class', 'image_width', 'image_height'
 annotation_files =  path_annotations.glob('*.csv')
+
+print("Getting annotation...")
 
 import sys
 

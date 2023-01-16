@@ -6,7 +6,7 @@ Run `pip install -r requirements.txt` to install python dependencies.
 
 Correct version of pytorch (Win10/11) `pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116`
 
-As we are on windows we'll also have to download the correct torchvision
+As we are on windows we'll also have to download the correct cuda-combatible versions for torch and torchvision.
 
 # Training
 
@@ -17,3 +17,11 @@ Training data is taken from the SKU110k dataset ([download from kaggle](https://
 After installing CUDA correctly run the following command to begin training:
 
 `yolo task=detect mode=train model=yolov8n.pt data=custom.yaml epochs=300 imgsz=320 workers=4 batch=8`
+
+# Results
+
+## Preliminary Model(s) (v0.0.1)
+
+Model(s) used to test whether it was possible to actually train on this dataset.
+
+Our findings were somewhat dissatisfactory when it came to the actual results of the training, however they did result in some models that were not completely useless. Thus we went on to invest more resources into training better models.

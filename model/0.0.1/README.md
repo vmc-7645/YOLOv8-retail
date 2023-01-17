@@ -36,5 +36,5 @@ Trained on 30 epochs with an image size of 160.
 
 ![Valid Batch 1](val_batch1_pred.jpg?raw=true "Valid Batch 1 Predictions")
 
-![Valid Batch 2](val_batch2_labels.jpg?raw=true "Valid Batch 2 Labels")
+![Valid Batch 2](val_batch2_pred.jpg?raw=true "Valid Batch 2 Predictions")
 

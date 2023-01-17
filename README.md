@@ -20,7 +20,7 @@ After installing CUDA correctly run the following command to begin training:
 
 # Results
 
-## Preliminary Model(s) (v0.0.1)
+## Preliminary Model(s) (v0.0.1-0.0.5)
 
 Model(s) used to test whether it was possible to actually train on this dataset.
 

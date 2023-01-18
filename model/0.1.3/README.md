@@ -19,3 +19,7 @@ Trained on 300 epochs with an image size of 320.
 ![Train Batch 1](train_batch1.jpg?raw=true "Train Batch 1")
 
 ![Train Batch 2](train_batch2.jpg?raw=true "Train Batch 2")
+
+Predictions mislabeled:
+
+![Mislabeled predictions](predictions.png?raw=true "Mislabeled predictions")

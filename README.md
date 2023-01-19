@@ -28,6 +28,13 @@ After installing CUDA correctly run the following command to begin training:
 
 # Results
 
+## Field Model(s) (v0.2.0-v0.2.1)
+Models with exceptional performance used in the field. Versions 0.2.0-0.2.1 used YOLOv8m, versions 0.2.2-Onwards use YOLOv8l.
+
+Example predictions (mislabeled) from a 0.2.1 run: 
+
+![Mislabeled predictions](model/0.2.1/predictions.png?raw=true "Mislabeled predictions, field model")
+
 ## Test Model(s) (v0.1.0-0.1.3)
 
 Model(s) used to test the capabilities of the models in some example scenarios. Used YOLOv8s as base model.

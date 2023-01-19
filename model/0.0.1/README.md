@@ -1,6 +1,6 @@
 # 0.0.1
 
-Trained on 30 epochs with an image size of 160.
+Trained on 30 epochs with an image size of 160. Used YOLOv8n.
 
 ## Data Visualization
 

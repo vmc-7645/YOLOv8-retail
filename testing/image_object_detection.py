@@ -4,7 +4,7 @@ from yolov8 import YOLOv8
 
 #Initialize yolov8
 model_path = "models/best18.onnx"
-yolov8_detector = YOLOv8(model_path, conf_thres=0.35, iou_thres=0.3)
+yolov8_detector = YOLOv8(model_path, conf_thres=0.45, iou_thres=0.5)
 
 #Read image
 # img_url = "https://media.newyorker.com/photos/5e5ed01f39e0e500082b73b6/master/w_2560%2Cc_limit/Rosner-CoronavirusPanicShopping.jpg"

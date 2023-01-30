@@ -2,6 +2,8 @@
 
 Trained on 300 epochs with an image size of 320. Used YOLOv8m.
 
+[Onnx file for this model can be found here!](https://drive.google.com/file/d/1T8udyoaBNRbtKLU2akAZvNuwZOqVj5Ik/view?usp=share_link)
+
 ## Data Visualization
 
 ![F1 Curve](F1_curve.png?raw=true "F1 Curve")

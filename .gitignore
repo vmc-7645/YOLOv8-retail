@@ -1,0 +1,2 @@
+# exclude all files with .mp4 extension  
+*.mp4

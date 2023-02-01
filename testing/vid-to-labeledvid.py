@@ -7,7 +7,7 @@ from yolov8 import YOLOv8
 #Initialize video
 cap = cv2.VideoCapture("test/test.mp4")
 #cap = cv2.VideoCapture('test/images/myFridge.mp4')
-start_time = 5 # skip first {start_time} seconds
+start_time = 40 # skip first {start_time} seconds
 cap.set(cv2.CAP_PROP_POS_FRAMES, start_time * cap.get(cv2.CAP_PROP_FPS))
 
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -19,14 +19,10 @@ out = cv2.VideoWriter('testout.mp4', fourcc, float(cap.get(cv2.CAP_PROP_FPS)), (
 
 #Initialize YOLOv8 model
 model_path = "models/best19.onnx"
-yolov8_detector = YOLOv8(model_path, conf_thres=0.5, iou_thres=0.5)
+yolov8_detector = YOLOv8(model_path, conf_thres=0.35, iou_thres=0.5)
 
 cv2.namedWindow("Detected Objects", cv2.WINDOW_NORMAL)
 while cap.isOpened():
-
-    #Press key q to stop
-    if cv2.waitKey(1) == ord('q'):
-        break
 
     try:
         #Read frame from the video

@@ -3,7 +3,7 @@ import cv2
 from yolov8 import YOLOv8
 
 #Initialize yolov8
-model_path = "models/best18.onnx"
+model_path = "models/best19.onnx"
 yolov8_detector = YOLOv8(model_path, conf_thres=0.45, iou_thres=0.5)
 
 #Read image

@@ -1,5 +1,8 @@
 # YOLOv8-retail
  Detect retail products via the YOLOv8 object recognition engine
+ 
+ Demo: [https://www.youtube.com/watch?v=yIRT5nHoH78](https://www.youtube.com/watch?v=yIRT5nHoH78)
+ 
 # Utilization
 
 ## Testing

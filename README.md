@@ -56,3 +56,9 @@ Our findings were somewhat dissatisfactory when it came to the actual results of
 Example predictions form a (0.0.1) run:
 
 ![Valid Batch 2](model/0.0.1/val_batch2_pred.jpg?raw=true "Valid Batch 2 Predictions")
+
+## Inverse
+
+Model that instead of getting the retail objects, gets the empty shelves where retail items should be. 
+
+[Download Link](https://drive.google.com/drive/folders/1ijsV8MYNFnP8mauivFEEQ4h2IwJ3HHT7?usp=sharing)
